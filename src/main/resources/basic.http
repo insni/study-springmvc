@@ -1,0 +1,27 @@
+### [GET] Init session with a user
+GET http://localhost:8080/user
+Accept: application/json
+
+###
+
+### [GET] Get user from session
+GET http://localhost:8080/user/filter
+Accept: application/json
+
+###
+
+### [GET] Check if user exists in session
+GET http://localhost:8080/user/notFound
+Accept: application/json
+
+###
+
+### [POST] Clear session
+POST http://localhost:8080/user/session/clear
+Accept: application/json
+
+###
+
+### [GET] Access form with current session
+GET http://localhost:8080/user/form
+Accept: application/json
