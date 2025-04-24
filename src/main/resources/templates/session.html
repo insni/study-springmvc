@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Session</title>
+</head>
+<body>
+<h1>User Session Info</h1>
+
+<div th:if="${session.user != null}">
+    <p><strong>Name:</strong> <span th:text="${session.user.name}">Name</span></p>
+    <p><strong>Email:</strong> <span th:text="${session.user.email}">Email</span></p>
+</div>
+
+<div th:if="${session.user == null}">
+    <p>User not found in session.</p>
+</div>
+
+<a th:href="@{/user}">Back to User Home</a>
+</body>
+</html>

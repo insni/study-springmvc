@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Session</title>
+</head>
+<body>
+<h1>User Session Info2</h1>
+<h1>Session Example</h1>
+<p th:text="'hello, ' + ${user.name}"></p>
+<p th:text="${user.message}"></p>
+<form th:action="@{/user2/session/clear}" method="post">
+    <button type="submit">clear session</button>
+</form>
+</body>
+</html>
