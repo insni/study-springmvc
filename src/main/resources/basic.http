@@ -1,0 +1,22 @@
+### Test greeting endpoint
+GET http://localhost:8080/greeting
+Accept: application/json
+
+###
+
+### Test greeting2 endpoint
+GET http://localhost:8080/greeting2
+Accept: application/json
+
+###
+
+### Test greeting3 endpoint
+GET http://localhost:8080/greeting3
+Accept: application/json
+
+###
+
+### Test GET /account with model attributes as query parameters
+GET http://localhost:8080/account?username=testuser&email=test@example.com
+Accept: application/json
+
