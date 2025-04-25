@@ -1,3 +1,6 @@
 ### Test request attribute injection via filter
-GET http://localhost:8080/example
-Accept: text/plain
+GET http://localhost:8080/cookie
+Cookie: userSession=abc123
+
+###
+GET http://localhost:8080/cookie
