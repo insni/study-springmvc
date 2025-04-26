@@ -1,0 +1,54 @@
+### 1. GET /user/requestBody - JSON 보내기
+GET http://localhost:8080/user/requestBody
+Content-Type: application/json
+
+{
+  "username": "getuser",
+  "email": "getuser@example.com"
+}
+
+###
+
+### 2. POST /user - JSON 요청 (createUser2)
+POST http://localhost:8080/user/json
+Content-Type: application/json
+
+{
+  "username": "jsonuser",
+  "email": "jsonuser@example.com"
+}
+
+###
+
+### 3. POST /user - TEXT 요청 (createUser3)
+POST http://localhost:8080/user/text
+Content-Type: text/plain
+
+username=plainuser&email=plainuser@example.com
+
+###
+
+### 4. POST /user - FORM 요청 (createUser4)
+POST http://localhost:8080/user/form
+Content-Type: application/x-www-form-urlencoded
+
+username=formuser&email=formuser@example.com
+
+###
+
+### 5. POST /user - JSON 요청 (createUser5)
+POST http://localhost:8080/user/mixed
+Content-Type: application/json
+
+{
+  "username": "multiuser",
+  "email": "multiuser@example.com"
+}
+
+###
+
+### 6. POST /user - TEXT 요청 (createUser5)
+POST http://localhost:8080/user/mixed
+Content-Type: text/plain
+
+["multiuser", "multiuser@example.com"]
