@@ -1,0 +1,12 @@
+POST localhost:8080/user/submit
+Content-Type: application/x-www-form-urlencoded
+
+username=insoo choi&email=cis940320@gmail.com
+
+
+
+### 데이터 바인딩 없이 모델에 접근
+POST localhost:8080/user/update
+Content-Type: application/x-www-form-urlencoded
+
+username=insoo choi&email=cis940320@gmail.com

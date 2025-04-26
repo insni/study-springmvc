@@ -1,0 +1,12 @@
+POST localhost:8080/account
+Content-Type: application/x-www-form-urlencoded
+
+first-name=insoo
+
+####
+PUT localhost:8080/account?first-name=insoo
+
+
+###
+
+GET localhost:8080/account
