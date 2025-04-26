@@ -1,0 +1,8 @@
+###
+POST localhost:8080/user/process
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "email": "uesr@email.com"
+}
