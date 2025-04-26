@@ -1,0 +1,7 @@
+POST localhost:8080/user/readbody
+Content-Type: application/json
+
+{
+  "username": "modeluser",
+  "email": "email@email.com"
+  }
