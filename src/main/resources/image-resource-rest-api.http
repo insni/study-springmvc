@@ -1,0 +1,39 @@
+### 1. /resource/imaxe.png 요청
+# ima?e.png 매칭 시도 (ex: imaxe.png)
+GET http://localhost:8080/resource/imaxe.png
+Accept: application/json
+
+###
+
+### 2. /resource/image.png 요청
+# ima?e.png 매칭 시도 (ex: image.png)
+GET http://localhost:8080/resource/myImage.png
+Accept: application/json
+
+###
+
+### 3. /resource/img.png 요청
+# ima?e.png 매칭 실패 예상 (img는 a가 빠짐)
+GET http://localhost:8080/resource/img.png
+Accept: application/json
+
+###
+
+### 4. /resource/test.png 요청
+# /*.png 매칭 시도
+GET http://localhost:8080/resource/test.png
+Accept: application/json
+
+###
+
+### 5. /resource/any/path/you/want.png 요청
+# /** 매칭 시도
+GET http://localhost:8080/resource/any/path/you/want.png
+Accept: application/json
+
+###
+
+### 6. /resource/other 요청
+# /** 매칭 시도
+GET http://localhost:8080/resource/other
+Accept: application/json

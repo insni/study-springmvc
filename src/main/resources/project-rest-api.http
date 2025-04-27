@@ -1,0 +1,33 @@
+GET http://localhost:8080/project/spring/version/1.0
+Accept: application/json
+
+
+### 정상 요청 1
+GET http://localhost:8080/project/spring/detail
+Accept: application/json
+
+###
+
+### 정상 요청 2
+GET http://localhost:8080/project/boot/detail
+Accept: application/json
+
+###
+
+# 3. 정상 요청 (대문자+소문자 섞임)
+GET http://localhost:8080/project/Spring/detail
+Accept: application/json
+
+
+################################################
+### 1. 기본 요청 (PathVariable만)
+GET http://localhost:8080/project/spring/version/1.0
+Accept: application/json
+
+###
+
+### 2. 다른 요청 (PathVariable만)
+GET http://localhost:8080/project/boot/version/2.5
+Accept: application/json
+
+###
