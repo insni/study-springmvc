@@ -1,0 +1,51 @@
+GET  localhost:8080/user?name=insoo
+Content-Type: application/json
+###
+GET  localhost:8080/user?name=yongsoo
+Content-Type: application/json
+
+###
+GET localhost:8080/user/required-true?name=insoo
+Content-Type: application/json
+###
+GET localhost:8080/user/required-true
+Content-Type: application/json
+###
+GET localhost:8080/user/required-false?name=insoo
+Content-Type: application/json
+###
+GET localhost:8080/user/default-value
+Content-Type: application/json
+###
+GET localhost:8080/user/default-value?123=insoo
+Content-Type: application/json
+###
+GET localhost:8080/user/no-name?name=insoo
+Content-Type: application/json
+###
+GET localhost:8080/user/no-request-param?name=insoo
+Content-Type: application/json
+###
+GET localhost:8080/user/id?id=3
+Content-Type: application/json
+###
+GET localhost:8080/user/id
+Content-Type: application/json
+###
+GET localhost:8080/user/id/anonymous
+Content-Type: application/json
+
+###
+POST localhost:8080/user?name=yongsoo&id=3
+Content-Type: application/json
+
+###
+GET localhost:8080/user/multi-value?id=1&id=2
+Content-Type: application/json
+###
+GET localhost:8080/user/multi-value?id=1&id=2
+Content-Type: application/json
+
+###
+GET localhost:8080/user/request-params?name=insoo&id=2
+Content-Type: application/json
