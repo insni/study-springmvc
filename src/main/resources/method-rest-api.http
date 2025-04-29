@@ -1,0 +1,22 @@
+###
+GET localhost:8080/method
+Content-Type: application/json
+
+###
+POST localhost:8080/method/session
+Content-Type: application/json
+###
+GET localhost:8080/method/session
+Content-Type: application/json
+
+###
+GET localhost:8080/method/user
+Content-Type: application/json
+
+###
+POST http://localhost:8080/method/readWrite
+Content-Type: text/plain
+
+###
+POST http://localhost:8080/method/check
+Content-Type: application/json
