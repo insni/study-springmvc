@@ -1,0 +1,3 @@
+###
+GET localhost:8080/?name=is&age=12
+Content-Type: application/json
