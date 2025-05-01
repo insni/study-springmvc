@@ -1,0 +1,14 @@
+###
+GET localhost:8080/example2
+Content-Type: application/json
+
+
+
+###
+### 요청: ExampleHttpRequestHandler 직접 호출
+GET http://localhost:8080/example2
+
+
+###
+GET http://localhost:8080/simpleUrl
+
