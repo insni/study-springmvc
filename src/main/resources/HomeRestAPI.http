@@ -1,0 +1,6 @@
+###
+GET localhost:8080/home/user
+Content-Type: application/json
+###
+GET localhost:8080/home/mypage
+Content-Type: application/json

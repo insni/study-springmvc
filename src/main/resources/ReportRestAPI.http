@@ -1,0 +1,20 @@
+
+### GET 요청 - application/json 소비
+GET http://localhost:8080/report
+Content-Type: application/json
+
+{
+  "title": "Spring Guide",
+  "author": "chatgpt"
+}
+
+
+### POST 요청 - JSON 전송, JSON 응답
+POST http://localhost:8080/report
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Spring Boot Deep Dive",
+  "author": "developer"
+}

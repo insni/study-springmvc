@@ -1,0 +1,23 @@
+### ❌ GET 실패: Content-Type 누락 (consumes 조건 불충족)
+GET http://localhost:8080/report
+
+{
+  "title": "No Content-Type",
+  "author": "fail"
+}
+
+### ❌ GET 실패: Content-Type text/plain (JSON 아닌 타입)
+GET http://localhost:8080/report
+Content-Type: text/plain
+
+This is not JSON
+
+### ❌ POST 실패: Accept가 text/plain → 서버는 JSON만 응답 가능
+POST http://localhost:8080/report
+Content-Type: application/json
+Accept: text/plain
+
+{
+  "title": "Wrong Accept",
+  "author": "client"
+}

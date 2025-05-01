@@ -1,0 +1,6 @@
+###
+GET localhost:8080/profile/view
+Content-Type: application/json
+###
+GET localhost:8080/profile/edit
+Content-Type: application/json

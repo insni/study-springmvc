@@ -1,0 +1,28 @@
+### 1. POST 요청 - Content-Type: text/plain (text/*에 해당)
+POST http://localhost:8080/content-type/text
+Content-Type: text/plain
+
+Hello, this is plain text
+
+### 2. POST 요청 - Content-Type: application/json
+POST http://localhost:8080/content-type/json
+Content-Type: application/json
+
+{
+  "key": "value"
+}
+
+### 3. GET 요청 - My-Header 헤더 포함
+GET http://localhost:8080/content-type/header
+My-Header: myValue
+
+###
+POST http://localhost:8080/content-type/json2
+Content-Type: application/json
+X-Custom-Header: abc123
+
+{
+  "name": "chatgpt",
+  "job": "assistant"
+}
+
