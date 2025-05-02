@@ -1,0 +1,36 @@
+### SetStatusServlet GET 요청 (응답: 202 Accepted)
+GET http://localhost:8080/setStatusExample
+
+### 404
+GET http://localhost:8080/sendErrorExample
+
+###
+GET http://localhost:8080/setHeaderExample
+
+###
+GET http://localhost:8080/addHeaderExample
+
+###
+GET http://localhost:8080/setContentTypeExample
+
+###
+GET http://localhost:8080/getWriterExample
+
+###
+GET http://localhost:8080/sendRedirectExample
+
+
+###
+GET http://localhost:8080/addCookieExample
+
+
+###
+GET http://localhost:8080/textResponse
+
+
+###
+GET http://localhost:8080/htmlResponse
+
+
+###
+GET http://localhost:8080/jsonResponse
