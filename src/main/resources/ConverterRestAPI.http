@@ -1,0 +1,6 @@
+###
+GET http://localhost:8080/convert/enum?value=RED
+###
+GET http://localhost:8080/convert/enum?value=ACTIVE
+###
+GET http://localhost:8080/user?name=insoo
