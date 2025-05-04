@@ -1,0 +1,14 @@
+### [GET] Convert Number
+GET http://localhost:8080/convert/number?number=123
+Accept: application/json
+
+### [GET] Get User by ID
+GET http://localhost:8080/convert/user/42
+Accept: application/json
+
+### [POST] Create User via Form
+POST http://localhost:8080/convert/user
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+
+name=sampleUser&id=42&address.city=Seoul&address.zipcode=12345
