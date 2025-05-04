@@ -6,7 +6,6 @@ import org.springframework.core.convert.converter.ConverterFactory;
 import org.springframework.stereotype.Component;
 
 @RequiredArgsConstructor
-@Component
 public class StringToEnumConverterFactory implements ConverterFactory<String,Enum> {
 
       @Override

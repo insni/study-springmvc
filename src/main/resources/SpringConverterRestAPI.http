@@ -1,0 +1,18 @@
+POST http://localhost:8080/spring/converter/url
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+
+url=http://www.springmvc.com:8080
+
+###
+###
+###
+POST http://localhost:8080/spring/converter/user
+Content-Type: application/x-www-form-urlencoded
+
+user=springmvc
+
+###
+###
+###
+POST http://localhost:8080/spring/converter/color?color=red

@@ -1,4 +1,4 @@
-package io.springmvc.springmvcmaster.controller;
+package io.springmvc.springmvcmaster.converter;
 
 import io.springmvc.springmvcmaster.annotation.CustomAnnotation;
 import io.springmvc.springmvcmaster.model.User;

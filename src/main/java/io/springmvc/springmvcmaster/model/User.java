@@ -1,10 +1,16 @@
 package io.springmvc.springmvcmaster.model;
 
 import io.springmvc.springmvcmaster.annotation.CustomAnnotation;
-import lombok.Data;
+import lombok.*;
+import org.springframework.web.bind.annotation.GetMapping;
 
-@Data
+
+@Getter
+@NoArgsConstructor
+@Setter
+@AllArgsConstructor
 public class User {
       @CustomAnnotation
       private String name;
 }
+
