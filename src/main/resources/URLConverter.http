@@ -1,0 +1,8 @@
+GET http://localhost:8080/url/converter?url=http://www.springmvc.com:8080
+Accept: application/json
+###
+POST http://localhost:8080/url/converter
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+
+protocol=http&domain=www.springmvc.com&port=8080
