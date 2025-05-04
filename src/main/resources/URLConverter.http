@@ -1,8 +1,11 @@
-GET http://localhost:8080/url/converter?url=http://www.springmvc.com:8080
-Accept: application/json
-###
+### [POST] Convert URL String to Object
 POST http://localhost:8080/url/converter
 Content-Type: application/x-www-form-urlencoded
 Accept: application/json
 
-protocol=http&domain=www.springmvc.com&port=8080
+url=http://www.springmvc.com:8080
+
+
+### [GET] Convert URL Object to String
+GET http://localhost:8080/url/converter?protocol=http&domain=www.springmvc.com&port=8080
+Accept: application/json
