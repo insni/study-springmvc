@@ -1,0 +1,11 @@
+###
+POST http://localhost:8080/user/binder
+Content-Type: application/x-www-form-urlencoded
+
+username=exampleUser&email=email@email.com&password=123456
+
+###
+POST http://localhost:8080/user/binder2
+Content-Type: application/x-www-form-urlencoded
+
+password=123456

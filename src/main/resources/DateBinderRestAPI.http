@@ -1,0 +1,21 @@
+### [FAIL] 잘못된 날짜 (포맷 오류: 슬래시 사용)
+POST http://localhost:8080/date/binder/submit
+Content-Type: application/x-www-form-urlencoded
+
+date=2023/10/10
+
+###
+
+### [FAIL] 잘못된 날짜 (존재하지 않는 월)
+POST http://localhost:8080/date/binder/submit
+Content-Type: application/x-www-form-urlencoded
+
+date=2023-20-10
+
+###
+
+### [PASS] 올바른 날짜
+POST http://localhost:8080/date/binder/submit
+Content-Type: application/x-www-form-urlencoded
+
+date=2023-10-10
