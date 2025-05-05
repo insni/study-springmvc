@@ -1,0 +1,4 @@
+GET http://localhost:8080/parse?param=1,000
+
+####
+GET http://localhost:8080/print?param=1000
