@@ -1,0 +1,15 @@
+### [GET] Format a Number to Korean Currency
+GET http://localhost:8080/format?param=1234567
+Accept: application/json
+
+### [GET] Parse Korean Currency to Number
+GET http://localhost:8080/parse?param=₩1,234,567
+Accept: application/json
+
+### [GET] Format a Number to Korean Currency
+GET http://localhost:8080/format2?currency=1234567
+Accept: application/json
+
+### [GET] Parse Korean Currency to Number
+GET http://localhost:8080/parse2?currency=₩1,234,567
+Accept: application/json
