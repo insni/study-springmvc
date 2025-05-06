@@ -1,0 +1,6 @@
+### [POST] MyModel 제출 테스트
+POST http://localhost:8080/submit
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+
+price=1234567&date=2025-05-04
