@@ -9,7 +9,7 @@ import java.util.Locale;
 public class KoreanCurrencyFormatter implements Formatter<Number> {
       @Override
       public String print(Number object, Locale locale) {
-            NumberFormat currencyInstance = NumberFormat.getCurrencyInstance(locale);
+            NumberFormat currencyInstance = NumberFormat.getCurrencyInstance(locale.KOREA);
             String format = currencyInstance.format(object);
             return format;
 
@@ -17,7 +17,7 @@ public class KoreanCurrencyFormatter implements Formatter<Number> {
 
       @Override
       public Number parse(String text, Locale locale) throws ParseException {
-            NumberFormat currencyInstance = NumberFormat.getCurrencyInstance(locale);
+            NumberFormat currencyInstance = NumberFormat.getCurrencyInstance(locale.KOREA);
             Number parse = currencyInstance.parse(text);
             return parse;
       }

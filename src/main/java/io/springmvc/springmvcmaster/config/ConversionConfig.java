@@ -4,40 +4,25 @@ import io.springmvc.springmvcmaster.converter.StringToURLConverter;
 import io.springmvc.springmvcmaster.format.KoreanCurrencyFormatter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.format.FormatterRegistrar;
 import org.springframework.format.FormatterRegistry;
-import org.springframework.format.support.DefaultFormattingConversionService;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-public class ConversionConfig {
+public class ConversionConfig implements WebMvcConfigurer {
 
-      @Bean
-      public FormatterRegistrar customFormatterRegistrar(){
-            FormatterRegistrar formatterRegistrar = new FormatterRegistrar() {
-                  @Override
-                  public void registerFormatters(FormatterRegistry registry) {
-                        registry.addConverter(stringToURLConverter());
-                        registry.addFormatter(koreanCurrencyFormatter());
-                  }
-            };
-            formatterRegistrar.registerFormatters(defaultFormattingConversionService());
-            return formatterRegistrar;
+      @Override
+      public void addFormatters(FormatterRegistry registry) {
+            registry.addConverter(new StringToURLConverter());
+            registry.addFormatter(new KoreanCurrencyFormatter());
       }
+
       @Bean
       public StringToURLConverter stringToURLConverter() {
             return new StringToURLConverter();
       }
 
       @Bean
-      public DefaultFormattingConversionService defaultFormattingConversionService (){
-            DefaultFormattingConversionService defaultFormattingConversionService = new DefaultFormattingConversionService();
-//            FormatterRegistrar 에서 대신 처리
-//            defaultFormattingConversionService.addFormatter(koreanCurrencyFormatter());
-            return defaultFormattingConversionService;
-      }
-      @Bean
-      public KoreanCurrencyFormatter koreanCurrencyFormatter (){
+      public KoreanCurrencyFormatter koreanCurrencyFormatter() {
             return new KoreanCurrencyFormatter();
-
       }
 }
