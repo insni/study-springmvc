@@ -1,0 +1,33 @@
+### Order - success case
+POST http://localhost:8080/order
+Content-Type: application/x-www-form-urlencoded
+
+item=Macbook&quantity=3
+
+### Order - missing item
+POST http://localhost:8080/order
+Content-Type: application/x-www-form-urlencoded
+
+item=&quantity=5
+
+
+### Order - invalid quantity
+POST http://localhost:8080/order
+Content-Type: application/x-www-form-urlencoded
+
+item=Keyboard&quantity=0
+
+
+### Order - both invalid
+POST http://localhost:8080/order
+Content-Type: application/x-www-form-urlencoded
+
+item=&quantity=0
+
+
+
+### Order - both invalid
+POST http://localhost:8080/order2
+Content-Type: application/x-www-form-urlencoded
+
+item=&quantity=0

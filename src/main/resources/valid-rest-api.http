@@ -1,0 +1,11 @@
+### no error
+POST http://localhost:8080/valid
+Content-Type: application/x-www-form-urlencoded
+
+username=username&age=10
+
+### age error
+POST http://localhost:8080/nonValid
+Content-Type: application/x-www-form-urlencoded
+
+name=leaven&age=w25&height=33
