@@ -1,0 +1,29 @@
+POST http://localhost:8080/users
+Content-Type: application/x-www-form-urlencoded
+
+userName=&age=101
+
+###
+POST http://localhost:8080/users2
+Content-Type: application/x-www-form-urlencoded
+
+userName=&age=101
+
+###
+POST http://localhost:8080/users3
+Content-Type: application/x-www-form-urlencoded
+
+userName=&age=101
+
+###
+POST http://localhost:8080/users4
+Content-Type: application/x-www-form-urlencoded
+
+userName=&age=101
+
+
+####
+POST http://localhost:8080/admin4
+Content-Type: application/x-www-form-urlencoded
+
+adminName=&age=101
