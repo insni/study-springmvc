@@ -1,0 +1,13 @@
+### addManager 요청 테스트
+POST http://localhost:8080/manager
+Content-Type: application/x-www-form-urlencoded
+
+managerName=John Doee&email=xxx@xxx.com
+
+###
+
+### updateManager 요청 테스트
+PATCH http://localhost:8080/manager
+Content-Type: application/x-www-form-urlencoded
+
+managerName=John Doee&email=invalid-mail
