@@ -1,0 +1,22 @@
+### 성공 요청 (정상적인 요청 데이터)
+POST http://localhost:8080/product
+Content-Type: application/x-www-form-urlencoded
+
+productName=Sample+Product&productPrice=19
+
+###
+
+### 실패 요청 1 (name 비어 있음)
+POST http://localhost:8080/product
+Content-Type: application/x-www-form-urlencoded
+
+productPrice=19
+
+###
+
+### 실패 요청 2 (price가 0 이하)
+POST http://localhost:8080/product
+Content-Type: application/x-www-form-urlencoded
+
+productName=Sample Product&productPrice=0
+
