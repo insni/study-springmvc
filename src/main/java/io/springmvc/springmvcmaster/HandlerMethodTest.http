@@ -1,0 +1,8 @@
+### Test for Handler Method
+GET http://localhost:8080/handler/method
+Accept: application/json
+
+
+### Test for Handler Method
+GET http://localhost:8080/handler/method2
+Accept: application/json
