@@ -1,0 +1,24 @@
+###
+POST http://localhost:8080/user
+Role: USER
+
+###
+POST http://localhost:8080/user
+Role: USER
+Content-Type: application/x-www-form-urlencoded
+
+username=tester&email=
+
+### 2. AdminOnly 어노테이션 있는 요청 및 Role 허용 (USER만 허용)
+POST http://localhost:8080/admin
+Role: ADMIN
+Content-Type: application/x-www-form-urlencoded
+
+username=tester&email=
+
+### 3. Role이 없는 요청 (403 Forbidden 테스트)
+GET http://localhost:8080/your-endpoint-with-adminOnly
+
+### 4. Role이 USER가 아닌 경우 (403 Forbidden 테스트)
+GET http://localhost:8080/your-endpoint-with-adminOnly
+Role: ADMIN
