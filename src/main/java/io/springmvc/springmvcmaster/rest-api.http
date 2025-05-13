@@ -1,0 +1,8 @@
+GET http://localhost:8080/error
+
+###
+GET http://localhost:8080/date?date=2024-11-01
+
+
+###
+GET http://localhost:8080/date?date=111111-111111
