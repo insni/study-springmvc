@@ -1,0 +1,36 @@
+### NoExceptionHandlerController 테스트
+# 1. /default 경로로 GET 요청하여 예외 확인
+GET http://localhost:8080/default
+Content-Type: application/json
+
+###
+
+# ExceptionHandlerController 테스트
+
+# 2. /name 경로에 query parameter로 "child1"을 전달하여 ChildException1 예외 처리 테스트
+GET http://localhost:8080/name?name=child1
+Content-Type: application/json
+
+###
+
+# 3. /name 경로에 query parameter로 "child2"를 전달하여 ChildException2 예외 처리 테스트
+GET http://localhost:8080/name?name=child2
+Content-Type: application/json
+
+###
+
+# 4. /name 경로에 없는 값 전달 (ex: "other")을 통해 ParentException 예외 처리 테스트
+GET http://localhost:8080/name?name=other
+Content-Type: application/json
+
+###
+
+# 5. /name 경로 없이 호출하면 400 Bad Request 발생 (name query parameter 누락 테스트)
+GET http://localhost:8080/name
+Content-Type: application/json
+
+###
+GET http://localhost:8080/custom/invalid
+
+###
+GET http://localhost:8080/custom/notfound2
