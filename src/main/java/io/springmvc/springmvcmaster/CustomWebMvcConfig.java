@@ -17,13 +17,19 @@ public class CustomWebMvcConfig implements
             WebMvcConfigurer.super.extendHandlerExceptionResolvers(resolvers);
             resolvers.add(simpleMappingExceptionResolver());
       }
-      public SimpleMappingExceptionResolver simpleMappingExceptionResolver() {
-            SimpleMappingExceptionResolver simpleMappingExceptionResolver = new SimpleMappingExceptionResolver();
+      public MockSimpleMappingExceptionResolver simpleMappingExceptionResolver() {
+            MockSimpleMappingExceptionResolver simpleMappingExceptionResolver = new MockSimpleMappingExceptionResolver();
 
-            // map exception and view name
+//             map exception and view name
             Properties resolverExceptionMappings=new Properties();
-            resolverExceptionMappings.put("java.lang.ArithmeticException","errorArithmetic");
-            resolverExceptionMappings.put("java.lang.NullPointerException","errorNullPointer");
+
+//            resolverExceptionMappings.put("java.lang.ArithmeticException","errorArithmetic");
+//            resolverExceptionMappings.put("java.lang.NullPointerException","errorNullPointer");
+
+//             does not have view(.html, .jsp)
+            resolverExceptionMappings.put("java.lang.ArithmeticException","/errorArithmetic");
+            resolverExceptionMappings.put("java.lang.NullPointerException","/errorNullPointer");
+
             simpleMappingExceptionResolver.setExceptionMappings(resolverExceptionMappings);
 
             // default view when does not havee view

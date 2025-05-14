@@ -1,0 +1,11 @@
+###
+POST http://localhost:8080/default/resolver
+
+
+### POST 요청으로 /default/resolver/consume 호출 (정상 처리)
+POST http://localhost:8080/default/resolver/consume
+Content-Type: application/json
+
+{
+  "key": "value"
+}

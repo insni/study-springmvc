@@ -9,7 +9,7 @@ public class ErrorController {
       public String arithmeticError() {
             throw new ArithmeticException("Arithmetic Exception Occurred!");
       }
-      @GetMapping("/nullpointer-error")
+      @GetMapping("/null-pointer-error")
       public String nullPointerError() {
             throw new NullPointerException("Null Pointer Exception Occurred!");
       }
