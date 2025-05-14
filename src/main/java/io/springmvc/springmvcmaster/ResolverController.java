@@ -10,7 +10,7 @@ import java.util.Map;
 @RequestMapping("/error")
 public class ResolverController {
       @GetMapping("/view")
-      public Map<String,String> viewError(){
+      public Map<String,String> wviewError(){
             throw new IllegalArgumentException( "view error");
       }
       @GetMapping("/json")
