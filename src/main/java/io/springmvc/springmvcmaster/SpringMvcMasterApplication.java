@@ -9,5 +9,4 @@ public class SpringMvcMasterApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringMvcMasterApplication.class, args);
     }
-
 }
