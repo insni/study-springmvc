@@ -1,5 +1,6 @@
 package io.springmvc.springmvcmaster;
 
+import org.apache.coyote.BadRequestException;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -13,7 +14,7 @@ import java.util.Map;
 @RestController
 public class ExceptionHandlerController {
       @GetMapping("/name")
-      public String handlePriority(@RequestParam("name") String name) {
+      public String handlePriority(@RequestParam(required = false, value = "name") String name) {
             if ("child1".equals(name)) {
 //           @ExceptionHandler(ChildException1.class) 메서드 호출
                   throw new ChildException1("child1 exception");
@@ -43,4 +44,6 @@ public class ExceptionHandlerController {
       public Map<String, String> handleIllegalException(Exception ex) {
            return Map.of("cause","illegal exception");
       }
+
+
 }
