@@ -10,4 +10,5 @@ public class SpringMvcMasterApplication {
         SpringApplication.run(SpringMvcMasterApplication.class, args);
     }
 
+
 }
