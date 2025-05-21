@@ -1,8 +1,7 @@
-package io.springmvc.springmvcmaster;
+package io.springmvc.springmvcmaster.http;
 
-import org.springframework.context.annotation.Bean;
+import io.springmvc.springmvcmaster.entity.User;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.client.RestClient;
 import org.springframework.web.service.annotation.GetExchange;
 import org.springframework.web.service.annotation.HttpExchange;
 

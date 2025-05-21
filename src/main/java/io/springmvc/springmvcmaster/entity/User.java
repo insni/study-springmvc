@@ -1,4 +1,4 @@
-package io.springmvc.springmvcmaster;
+package io.springmvc.springmvcmaster.entity;
 
 import lombok.AllArgsConstructor;
 

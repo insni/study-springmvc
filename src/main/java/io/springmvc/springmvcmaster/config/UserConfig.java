@@ -1,5 +1,6 @@
-package io.springmvc.springmvcmaster;
+package io.springmvc.springmvcmaster.config;
 
+import io.springmvc.springmvcmaster.http.UserClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestClient;
