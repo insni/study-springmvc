@@ -1,5 +1,7 @@
-package io.springmvc.springmvcmaster;
+package io.springmvc.springmvcmaster.service;
 
+import io.springmvc.springmvcmaster.entity.Post;
+import io.springmvc.springmvcmaster.http.PostClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
