@@ -11,9 +11,13 @@ public class PostService {
       private final PostClient postClient;
       public Post execute(){
             Post post = postClient.getPostById(1L);
-            Post newPost = new Post(null,"title","new post",1L);
+            Post newPost = new Post(null,"title","new post",999L);
             Post createPost = postClient.createPost(newPost);
             return createPost;
 
+      }
+
+      public Post getPostById(Long id){
+            return postClient.getPostById(id);
       }
 }
